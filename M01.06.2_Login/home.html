@@ -10,32 +10,35 @@
 </head>
 
 <body>
-    <main>
-        <div class="top">
-            <img src="assets/logo.png">
-            <h1>Welcome back!</h1>
-            <p>Login to your account and let's that productivity soaring!</p>
+    <nav><a href="../home.html">RETURN</a></nav>
+    <div class="submain">
+        <main>
+            <div class="top">
+                <img src="assets/logo.png">
+                <h1>Welcome back!</h1>
+                <p>Login to your account and let's that productivity soaring!</p>
+            </div>
+            
+            <form>
+                <div class="login-form__section">
+                    <label for="username">Username</label>
+                    <input id="username" type="text"/>
+                </div>
+
+                <div class="login-form__section">
+                    <label for="password">Password</label>
+                    <input id="password" type="password"/>
+                </div>
+
+                <button type="button" onclick="login()">Login</button>
+            </form>
+
+            <p id="result"></p>
+        </main>
+
+        <div class="background">
+            <img src="assets/bg.avif">
         </div>
-        
-        <form>
-            <div class="login-form__section">
-                <label for="username">Username</label>
-                <input id="username" type="text"/>
-            </div>
-
-            <div class="login-form__section">
-                <label for="password">Password</label>
-                <input id="password" type="password"/>
-            </div>
-
-            <button type="button" onclick="login()">Login</button>
-        </form>
-
-        <p id="result"></p>
-    </main>
-
-    <div class="background">
-        <img src="assets/bg.avif">
     </div>
     
     <script src="script.js"></script>

@@ -11,6 +11,27 @@
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+}
+
+div.submain {
+    flex: 1;
+    display: flex;
+}
+
+nav {
+    background-color: white;
+    padding: 2rem;
+    border-bottom: 4px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+
+    background-color: greenyellow;
+    border-radius: 0.825rem;
+    padding: 1em;
 }
 
 .Background-Card {

@@ -26,6 +26,22 @@ body {
     background-color: var(--clr-background);
     min-height: 100svh;
     display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: white;
+    padding: 2rem;
+    border-bottom: 4px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+
+    background-color: greenyellow;
+    border-radius: 0.825rem;
+    padding: 1em;
 }
 
 h1 {

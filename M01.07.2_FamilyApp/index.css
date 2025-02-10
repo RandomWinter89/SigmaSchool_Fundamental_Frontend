@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100svh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========Header======= */
+
+header {
+    background-color: white;
+    position: sticky;
+    padding: 0.5rem 3rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    border-bottom: 0.25rem solid black;
+}
+
+main {
+    flex: 1;
+    background-color: #f0f3f7;
+    padding: 2rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* =========Form======= */
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+}
+
+input, select {
+    flex: 1;
+
+    background-color: white;
+    min-width: 0rem;
+    padding: 0.75rem 1rem;
+
+    border: 0.125rem solid black;
+    border-radius: 0.25rem;
+    box-shadow: 0.25rem 0.25rem black;
+
+    font-size: 1rem;
+}
+
+select {
+    background-color: darkred;
+    color: white;
+}
+
+button {
+    background-color: #089ea9;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+
+    border-radius: 0.25rem;
+    border: 0.125rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+}
+
+button:hover {
+    background-color: #027d86;
+}
+
+form > div {
+    flex: 80%;
+
+    display: inherit;
+    justify-content: stretch;
+    gap: 0.75rem;
+}
+
+form > span {
+    flex: 10%;
+}
+
+form > button {
+    flex: 10%;
+    padding: 0.75rem 1rem;
+}
+
+/* =========Form======= */
+
+table {
+    border-collapse: collapse;
+}
+
+table > thead {
+    text-align: left;
+}
+
+table > tbody {
+    background-color: white;
+}
+
+thead > tr * {
+    background-color: #027d86;
+    color: white;
+}
+
+th {
+    background-color: #f9fafb;
+    padding: 0.825rem 0.75rem;
+}
+
+td {
+    padding: 1rem 0.75rem;
+}
+
+td.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    
+}
+
+td.button-container > button {
+    padding: 1rem 0.25rem;
+    font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 57.5em) {
+    header {
+        justify-content: center;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form > div {
+        flex-direction: column;
+    }
+
+    td.button-container {
+        flex-direction: column;
+        gap: 0.625em;
+    }
+}

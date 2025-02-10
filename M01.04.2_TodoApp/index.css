@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100svh;
+    display: flex;
+}
+
+div.Landing-Cover {
+    flex: 1;
+    max-height: 100svh;
+    background-color: #252525;
+    overflow: hidden;
+}
+
+div.Landing-Cover img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+main {
+    flex: 1;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > img {
+    inline-size: 3.5rem;
+}
+
+main > div.titles-container  {
+    font-size: 1.75rem;
+}
+
+main > p {
+    font-size: 1.25rem;
+}
+
+main > div.buttons-container {
+    margin-top: 1.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 0.35rem 0.5rem;
+}
+
+button {
+    background-color: blue;
+    border-radius: 0.75rem;
+    border-style: none;
+
+    height: 3rem;
+
+    color: white;
+    font-size: 1.25rem;
+}
+
+button:hover {
+    background-color: brown;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 57.5em) {
+    .Landing-Cover {
+        display: none;
+    }
+
+    main {
+        border: 0.2rem solid black;
+        box-shadow: 10px 10px black;
+        margin: 2rem auto;
+
+        max-width: 80svw;
+        align-items: center;
+        text-align: center;
+    }
+
+    main > div.titles-container {
+        margin-bottom: 0.5em;
+    }
+
+    main > div.titles-container br {
+        display: none;
+    }
+
+    main > * {
+        width: 90%;
+    }
+}

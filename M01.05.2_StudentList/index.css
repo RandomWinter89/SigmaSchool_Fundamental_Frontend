@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100svh;
+    display: flex;
+}
+
+/* ========================= */
+
+div.background {
+    flex: 1;
+    background-color: beige;
+    max-height: 100svh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+}
+
+div.background img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    padding: 2rem;
+}
+
+/* ========================= */
+
+main {
+    flex: 1;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > img {
+    inline-size: 3.5rem;
+}
+
+main > div.tagline {
+    font-size: 1.75rem;
+}
+
+main > p {
+    font-size: 1.25rem;
+}
+
+main > div.buttons-container {
+    margin-top: 1.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 0.5rem;
+}
+
+/* ========================= */
+
+button {
+    background-color: darkgreen;
+    border-radius: 0.75rem;
+    border-style: none;
+
+    box-shadow: 4px 4px black;
+    height: 3rem;
+
+    color: white;
+    font-size: 1.25rem;
+}
+
+button:nth-child(2) {
+    background-color: pink;
+    color: black;
+}
+
+button:nth-child(3) {
+    background-color: orange;
+    color: black;
+}
+
+button:last-child {
+    background-color: olive;
+    color: white;
+}
+
+button:hover {
+    background-color: darkslategrey;
+    color: white;
+    cursor: pointer;
+}
+
+/* ========================= */
+
+@media only screen and (max-width: 57.5em) {
+    div.background {
+        display: none;
+    }
+
+    main {
+        border: 0.2rem solid black;
+        box-shadow: 10px 10px black;
+        margin: 2rem auto;
+
+        max-width: 80svw;
+        align-items: center;
+        text-align: center;
+    }
+
+    main > div.tagline {
+        margin-bottom: 0.5em;
+    }
+
+    main > * {
+        width: 90%;
+    }
+}

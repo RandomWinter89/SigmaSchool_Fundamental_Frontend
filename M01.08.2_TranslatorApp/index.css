@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100svh;
+    display: flex;
+    color: white;
+}
+
+button {
+    background-color: #ffaac3;
+    color: white;
+    font-size: 1.25rem;
+
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1.25rem;
+    
+    border-style: none;
+    border-radius: 0.25rem;
+    box-shadow: 0.325rem 0.325rem white;
+}
+
+button:hover {
+    background-color: #e08ba5;
+    cursor: pointer;
+}
+
+/* === Main Cover === */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 3rem;
+    gap: 1.5rem;
+
+    background-color: #541554;
+}
+
+div.top > * {
+    margin-bottom: 1rem;
+}
+
+div.top > h1 {
+    font-size: 3rem;
+}
+
+div.top > p {
+    font-size: 1.25rem;
+}
+
+/* === Image Cover === */
+div.Cover {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    overflow: hidden;
+}
+
+div.Cover img {
+    max-width: 100%;
+}
+
+/* === Container === */
+
+div.inputs-container {
+    display: flex;
+    flex-direction: row;
+
+    gap: 1.5rem;
+}
+
+div.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+select, textarea {
+    border-style: none;
+    padding: 0.75rem 1rem;
+    width: 100%;
+}
+
+textarea {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+
+    min-height: 8rem;
+    resize:vertical;
+}
+
+select {
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+
+    border-right: 1rem solid transparent;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+form > p#Result{
+    margin: 1rem auto;
+    font-size: 1.25rem;
+    text-align: center;
+
+    display: none;
+}
+
+/* === Media Query === */
+
+@media only screen and (max-width: 57.5em) {
+    div.inputs-container {
+        flex-direction: column;
+    }
+
+    div.Cover {
+        display: none;
+    }
+}

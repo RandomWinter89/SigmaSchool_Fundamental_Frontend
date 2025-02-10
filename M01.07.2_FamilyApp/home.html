@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="index.css" rel="stylesheet" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    
+</body>
+    <header>
+        <img src="assets/logo.png">
+        <h1>Family Members</h1>
+    </header>
+
+    <main>
+        <form>
+            <div>
+                <input id="inputName" type="text" placeholder="Name"/>
+                <input id="inputAge" type="number" placeholder="Age"/>
+                <select id="genderOption" name="Other">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <span></span>
+            <button type="button" onclick="submitMember()">Submit</button>
+        </form>
+
+        <table id="data">
+            <!-- Header -->
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>GENDER</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <!-- Body -->
+            <tbody>
+
+            </tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</html>

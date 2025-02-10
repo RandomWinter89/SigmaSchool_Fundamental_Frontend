@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="index.css" rel="stylesheet">
+    
+    <title>Quiz App</title>
+</head>
+
+<body onload="displayQuestion()">
+    <main>
+        <h1>Simple Quiz App</h1>
+        <img src="assets/boys.png">
+        <h3 id="Question"></h3>
+        <h3 id="result"></h3>
+        <input type="text" id="input_answer"/>
+        <button id="submit" onclick="onSubmit()">Submit</button>
+        <button id="reset" onclick="resetQuestion()">Retry</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

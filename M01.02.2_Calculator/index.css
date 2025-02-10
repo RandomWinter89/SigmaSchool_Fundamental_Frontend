@@ -1,0 +1,94 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Inter';
+}
+
+:root {
+    --clr-dark: #000000;
+    --clr-white: #ffffff;
+    --clr-primary: #ED35B9;
+    --clr-secondary: #AF2B8A;
+}
+
+body {
+    background-image: url("assets/bg.png");
+    background-size: cover;
+    min-height: 100svh;
+
+    display: flex;
+}
+
+main {
+    background-color: var(--clr-white);
+    border-radius: 0.5rem;
+
+    border: 0.125rem solid var();
+    box-shadow: 0px 0px 8px var(--clr-secondary);
+
+    width: clamp(30rem, 32vw, 60rem);
+    padding: 1.5em;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1.5em;
+}
+
+main > img {
+    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+main > img:hover {
+    transform-origin: center;
+    transform: translateY(-15px) rotate(3deg);
+}
+
+div#buttons-container {
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em 0.5em;
+}
+
+button {
+    background-color: var(--clr-primary);
+
+    border-style: none;
+    border-radius: 0.5em;
+    
+    box-shadow: 0px 6px var(--clr-secondary);
+    height: 3rem;
+    padding: 1em;
+
+    transition: transform 0.25s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--clr-secondary);
+
+    transform-origin: center;
+    transform:  scale(1.15);
+}
+
+@media only screen and (max-width: 57.5em) {
+    main {
+        padding: 2.5em 3.625em;
+    }
+
+    div#buttons-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    button {
+        height: 3rem;
+        min-width: 10rem;
+    }
+}

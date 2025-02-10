@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="index.css" rel="stylesheet">
+    
+    <title>Authentication</title>
+</head>
+
+<body>
+    <main>
+        <div class="top">
+            <img src="assets/logo.png">
+            <h1 id="title">Welcome back!</h1>
+            <p id="description">Login to your account and let's get that productivity soaring</p>
+        </div>
+
+        <form>
+            <label>Username</label>
+            <input id="inputUsername" type="text">
+
+            <label>Password</label>
+            <input id="inputPassword" type="password">
+
+            <div id="confirm-container">
+                <label>Confirm Password</label>
+                <input id="inputConfirmPassword" type="password">
+            </div>
+
+            <button type="button" id="button-container" onclick="handleSubmit()">Login</button>
+        </form>
+        
+        <p>
+            <span id="tagline">Don't have an account?</span>
+            <span id="registerMode" onclick="swapAuth()">Sign Up</span>
+        </p>
+    </main>
+
+    <div class="cover">
+        <img src="assets/cover.png">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

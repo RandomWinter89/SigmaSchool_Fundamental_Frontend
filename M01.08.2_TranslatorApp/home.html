@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="index.css" rel="stylesheet">
+    
+    <title>Translator App</title>
+</head>
+
+<body>
+    <main>
+        <div class="top">
+            <img src="assets/logo.png">
+            <h1>Simple Translator</h1>
+            <p>Embrace the Power of Translation</p>
+        </div>
+
+        <form>
+            <div class="inputs-container">
+                <div class="container">
+                        <select id="Language-Input" name="English">
+                            <option value="English">English</option>
+                            <option value="Chinese">Chinese</option>
+                            <option value="Malay">Malay</option>
+                            <option value="Japanese">Japanese</option>
+                        </select>
+                    <textarea 
+                        id="Untranslate-Input"
+                        placeholder="Type your text here..."
+                    ></textarea>
+                </div>
+
+                <div class="container">
+                        <select id="Language-Output">
+                            <option value="English">English</option>
+                            <option value="Chinese">Chinese</option>
+                            <option value="Malay">Malay</option>
+                            <option value="Japanese">Japanese</option>
+                        </select>
+                    <textarea
+                        id="Translate-Output"
+                        placeholder="Translation Not Found"
+                    ></textarea>
+                </div>
+            </div>
+            <p id="Result">Translated</p>
+
+            <button type="button" onclick="translateText()">Translate</button>
+        </form>
+    </main>
+    
+    <div class="Cover">
+        <img src="assets/cover.png">
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
